@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Vendor & Professional App</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d">Skoolsaver</a>
+            <button class="nav-menu d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-menu-button-fill"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#vendors">Vendors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#professionals">Professionals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Login</button>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="home pt-5 pb-5" id="home">
+        <div class="row justify-content-evenly align-middle">
+            <div class="col-10 col-md-6 text-center text-md-start">
+                <h2 style="color: #3f396d">
+                    Discover Local Vendors & <br /><span class="c-orange">Professionals Near You</span>
+                </h2>
+                <p class="text-muted">
+                    Connecting college students with local businesses and professionals for a better campus experience.
+                </p>
+                <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">Get Started</button>
+                <a href="#vendors" class="link ms-4 d-none">Explore Vendors</a>
+            </div>
+            <div class="col-10 col-md-4 d-none d-md-block">
+                <img src="images/home-banner.jpg" class="img-fluid" alt="Home Banner" />
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Vendors Section -->
+    <section class="vendors mt-5" id="vendors">
+        <div class="heading text-center">
+            <small>Our Vendors</small>
+            <h3>Explore Local Shops</h3>
+        </div>
+        <div class="row justify-content-evenly mt-5">
+            <!-- Example Vendor Card -->
+            <div class="col-10 col-md-4" data-aos="fade-up">
+                <div class="service-card">
+                    <div class="img">
+                        <img src="images/vendor1.jpg" class="w-25 img-fluid img" alt="Vendor Image" />
+                    </div>
+                    <div class="content mt-3">
+                        <h4>Food Express</h4>
+                        <p class="text-muted">Delicious meals at a student-friendly price.</p>
+                        <a href="#" class="link">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more vendors as needed -->
+        </div>
+    </section>
+
+    <!-- Professionals Section -->
+    <section class="professionals mt-5" id="professionals">
+        <div class="heading text-center">
+            <small>Our Professionals</small>
+            <h3>Connect with Experts</h3>
+        </div>
+        <div class="row justify-content-evenly mt-5">
+            <!-- Example Professional Card -->
+            <div class="col-10 col-md-4" data-aos="fade-up">
+                <div class="service-card">
+                    <div class="img">
+                        <img src="images/professional1.jpg" class="w-25 img-fluid img" alt="Professional Image" />
+                    </div>
+                    <div class="content mt-3">
+                        <h4>John Doe - Career Coach</h4>
+                        <p class="text-muted">Guidance for your academic and professional journey.</p>
+                        <a href="#" class="link">Contact Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more professionals as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact py-5" id="contact">
+        <div class="heading text-center">
+            <small>Get in Touch</small>
+            <h3>Any Questions? Feel Free to Contact Us</h3>
+        </div>
+        <div class="row justify-content-evenly mt-5">
+            <div class="col-md-5 col-10 contact-details">
+                <div class="row justify-content-evenly">
+                    <div class="col-1"><i class="bi bi-geo-alt-fill"></i></div>
+                    <div class="col-11"><p>14 Reynolds Avenue, East Newark, New Jersey India</p></div>
+                </div>
+                <div class="row justify-content-evenly">
+                    <div class="col-1"><i class="bi bi-telephone-fill"></i></div>
+                    <div class="col-11"><p>+91 9527818693</p></div>
+                </div>
+                <div class="row justify-content-evenly">
+                    <div class="col-1"><i class="bi bi-send-fill"></i></div>
+                    <div class="col-11"><p>contact@Skoolsaver.com</p></div>
+                </div>
+            </div>
+            <div class="col-md-5 col-10 mt-3 mt-md-0">
+                <div class="contact-form">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Name" />
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="E-mail" />
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Mobile No." />
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" placeholder="Message" rows="5"></textarea>
+                    </div>
+                    <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motivation Section -->
+    <section class="motivation py-5">
+        <div class="container">
+            <h3 class="text-center mb-4" style="color: #3f396d;">Our Motivation</h3>
+            <p>
+                Our mission is to help college students find affordable essential products and services, 
+                connect with mentors and professionals, and offer local vendors increased visibility among students. 
+                The idea for this platform was born from the challenges students face in managing their budgets, 
+                accessing mentorship, and finding opportunities to collaborate on startup ideas.
+            </p>
+            <p>
+                <strong>Affordable Essential Products and Services:</strong> We recognize that students often struggle 
+                to find affordable accommodations, clothing, and meals within their tight budgets. Our app lists 
+                local vendors offering discounts on a range of products and services, making it easier for students 
+                to find what they need at a price they can afford.
+            </p>
+            <p>
+                <strong>Access to Mentorship and Professional Connections:</strong> Many students face difficulties in 
+                finding mentorship or connecting with industry experts. Our platform facilitates these connections, 
+                helping students to receive guidance and career advice from experienced professionals.
+            </p>
+            <p>
+                <strong>Increased Visibility for Local Vendors:</strong> Local businesses often struggle with visibility 
+                and attracting student customers. By listing their offers on our app, vendors can increase their 
+                visibility and reach a broader student audience.
+            </p>
+            <p>
+                <strong>Collaboration and Networking for Student Startups:</strong> Our platform also supports students 
+                with startup ideas by providing a space to find co-founders and collaborators.
+            </p>
+            <p>
+                Each of these features is integrated into a single platform designed to address specific challenges, 
+                making it easier for students, professionals, and vendors to connect, collaborate, and thrive.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-muted py-4">
+        <h3 class="text-white pt-4">Skoolsaver</h3>
+        <div class="link-group mt-5">
+            <a href="#home">Home</a>
+            <div class="vr"></div>
+            <a href="#vendors">Vendors</a>
+            <div class="vr"></div>
+            <a href="#professionals">Professionals</a>
+            <div class="vr"></div>
+            <a href="#contact">Contact</a>
+        </div>
+        <hr class="text-muted my-4" />
+        <p>Copyright 2024 Skoolsaver | All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.navbar-brand {
+    color: #1d2d50;
+}
+
+.navbar-nav a {
+    color: #1d2d50;
+}
+
+.c-btn {
+    background-color: #1d2d50;
+    color: #fff;
+}
+
+.home {
+    background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);
+    padding: 30px 0px 10px 0px;
+}
+
+.home h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.c-orange {
+    color: #ff7f50;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.home img {
+    animation: floatimg 4s ease-in-out infinite;
+}
+
+@keyframes floatimg {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-24px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Motivation Section */
+.motivation {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+.motivation h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.motivation p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.motivation p strong {
+    color: #3f396d;
+    font-weight: 600;
+}
+
+/* Vendors and Professionals Sections */
+.vendors, .professionals {
+    background-color: #f0f8ff;
+    padding: 50px 0;
+}
+
+.service-card {
+    text-align: center;
+    padding: 15px;
+    border-radius: 0.7rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-card .img img {
+    width: 50%;
+}
+
+.service-card h4 {
+    color: #1d2d50;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.service-card p {
+    color: #6c757d;
+    font-size: 1rem;
+}
+
+.service-card .link {
+    color: #1d2d50;
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.service-card .link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    top: 20px;
+    background-color: #ff7f50;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.service-card .link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.service-card .link:hover {
+    color: #ff7f50;
+}
+
+/* Contact Section */
+.contact-details i {
+    font-size: 1.5rem;
+    color: #1d2d50;
+}
+
+.contact-details p {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.contact-form .form-control:focus {
+    box-shadow: none;
+    border: 1px solid #1d2d50;
+}
+
+.contact-form .form-control {
+    padding: 10px 10px;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #1d2d50;
+    color: #fff;
+}
+
+footer .link-group a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #f0f8ff;
+}
+
+footer .link-group a:hover {
+    color: #ff7f50;
+}
